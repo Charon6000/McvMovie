@@ -722,3 +722,7 @@ C:\Users\Uczen\Desktop\McvMovie\McvMovie\obj\Debug\net7.0\scopedcss\projectbundl
 C:\Users\Uczen\Desktop\McvMovie\McvMovie\obj\Debug\net7.0\McvMovie.csproj.CopyComplete
 C:\Users\Uczen\Desktop\McvMovie\McvMovie\obj\Debug\net7.0\McvMovie.genruntimeconfig.cache
 C:\Users\Uczen\Desktop\McvMovie\McvMovie\obj\Debug\net7.0\ref\McvMovie.dll
+C:\Users\Uczen\Desktop\McvMovie\McvMovie\bin\Debug\net7.0\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll
+C:\Users\Uczen\Desktop\McvMovie\McvMovie\bin\Debug\net7.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\Uczen\Desktop\McvMovie\McvMovie\bin\Debug\net7.0\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\Uczen\Desktop\McvMovie\McvMovie\bin\Debug\net7.0\Newtonsoft.Json.dll
