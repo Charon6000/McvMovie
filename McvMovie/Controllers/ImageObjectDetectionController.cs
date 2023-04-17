@@ -22,7 +22,7 @@ namespace McvMovie.Controllers
             DetectResult detectResults = await apiClient.DetectObjectsInStreamAsync(inputFile.OpenReadStream());
             ViewBag.Message = JsonSerializer.Serialize(detectResults);
 
-            return View("Wynik");
+            return View("Wynik", JsonSerializer.Serialize(detectResults));
         }
     }
 }
