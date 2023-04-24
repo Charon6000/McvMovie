@@ -2,12 +2,31 @@
     ViewData["Title"] = "ImageObjectDetection";
 }
 
-<h2>Wysyłanie zdjęcia</h2>
-
-<p>Wyślij plik</p>
+<h2>Wybierz zdjęcie</h2>
 <form action="/ImageObjectDetection/Detect" enctype="multipart/form-data" method="post">
-    <input type="file" id="myFile" name="inputFile">
+    <input class="form-control" type="file" name="inputFile">
     <br />
     <br />
-    <input type="submit">
+    <button type="submit" class="btn btn-primary">Generuj opis</button>
+    @if (ViewBag.Message != null)
+    {
+        <p>@ViewBag.Message</p>
+    }
+    <p>
+        @if (ViewBag.Objects != null)
+        {
+            <img src="@ViewBag.IMG" />
+            @foreach (var a in ViewBag.Objects)
+            {
+            <p>
+                    @a.ObjectProperty :<br />
+                Y: @a.Rectangle.X<br/>
+                X: @a.Rectangle.Y<br />
+                Procent na bycie @a.ObjectProperty:  @a.Confidence.ToString()<br />
+                Rodzic: @a.Parent.ObjectProperty
+            </p>
+                <br/>
+            }
+        }
+    </p>
 </form>
