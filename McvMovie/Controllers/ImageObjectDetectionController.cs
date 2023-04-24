@@ -21,7 +21,7 @@ namespace McvMovie.Controllers
             var apiClient = new ComputerVisionClient(new ApiKeyServiceClientCredentials(ApiKey)) { Endpoint = ApiUrl };
             DetectResult detectResults = await apiClient.DetectObjectsInStreamAsync(inputFile.OpenReadStream());
             ViewBag.Message = JsonSerializer.Serialize(detectResults);
-
+            ViewData["Wynik"] = JsonSerializer.Serialize(detectResults);
             return View("Wynik", JsonSerializer.Serialize(detectResults));
         }
     }
